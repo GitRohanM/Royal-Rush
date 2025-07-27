@@ -214,7 +214,6 @@ MonoBehaviour:
   movementSpeed: 5
   xClamp: 3
   yClamp: 2
-  controlSpeed: 10
 --- !u!54 &202936297
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -721,8 +720,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c0cc3133acaa74cb0c8370b42d303c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 7358837335838869548, guid: 459eb5e356da3754e8600c91430d92bb, type: 3}
+  obstaclePrefabs:
+  - {fileID: 7358837335838869548, guid: 459eb5e356da3754e8600c91430d92bb, type: 3}
+  - {fileID: 2282958288498335007, guid: dbf8bd49621c64749a50f1325133c35d, type: 3}
+  - {fileID: 5243507160824834497, guid: 451ac42c02a2c7842abc330cc8bff388, type: 3}
+  - {fileID: 191337397869023828, guid: 08fdf254ce744494baac26f07c31277f, type: 3}
+  - {fileID: 8880004023002924453, guid: 5a0f52293e966e04090df17c39640c2b, type: 3}
+  - {fileID: 4144624749069344, guid: 11865939d262dc34fad4a3ab492d67d2, type: 3}
   spawnInterval: 3
+  obstacleParent: {fileID: 1989878204}
+  spawnWidth: 4.5
 --- !u!4 &1137536292
 Transform:
   m_ObjectHideFlags: 0

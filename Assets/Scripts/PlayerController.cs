@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float movementSpeed = 5f;
     [SerializeField] float xClamp = 5f;
     [SerializeField] float yClamp = 5f;
-    [SerializeField] float controlSpeed = 10f;
 
     Rigidbody rb;
     Vector2 movement;
