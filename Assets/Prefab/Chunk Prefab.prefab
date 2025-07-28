@@ -196,9 +196,9 @@ MonoBehaviour:
   coinSpawnChance: 0.5
   coinSpawnLength: 2
   lanes:
-  - -2.5
+  - -3
   - 0
-  - 2.5
+  - 3
 --- !u!1001 &3144434655327542579
 PrefabInstance:
   m_ObjectHideFlags: 0
