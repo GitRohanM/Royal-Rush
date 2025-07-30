@@ -7,11 +7,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text timeText;
     [SerializeField] GameObject gameoverText;
 
-    [SerializeField] float startTime = 5f;
-    float timeLeft;
+    [SerializeField] protected float startTime = 60f;
 
+    float timeLeft;
     bool gameOver = false;
 
+    public bool GameOver => gameOver;
     void Start()
     {
         timeLeft = startTime;
@@ -20,6 +21,12 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         DecreaseTime();
+    }
+
+    public void UpdateTime(float timeAmount)
+    {
+        timeLeft += timeAmount;
+        // timeText.text = timeLeft.ToString("F1");
     }
 
     void DecreaseTime()
@@ -31,11 +38,11 @@ public class GameManager : MonoBehaviour
 
         if (timeLeft <= 0)
         {
-            GameOver();
+            PlayerGameOver();
         }
     }
 
-    void GameOver()
+    void PlayerGameOver()
     {
         gameOver = true;
         playerController.enabled = false;
