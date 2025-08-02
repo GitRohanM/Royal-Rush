@@ -15,8 +15,8 @@ public class LevelGenerator : MonoBehaviour
     [Tooltip("The amount of chunks we start with")]
     [SerializeField] int startingChunksAmt = 12;
     [Tooltip("Do not change chunk length unless you know what you are doing")]
-    [SerializeField] float chunkLength = 10f;
     [SerializeField] int checkpointChunkInterval = 8;
+    [SerializeField] float chunkLength = 10f;
     [SerializeField] float moveSpeed = 8f;
     [SerializeField] float minMoveSpeed = 2f;
     [SerializeField] float maxMoveSpeed = 20f;

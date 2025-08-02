@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    
     [SerializeField] ParticleSystem speedupParticleSystem;
     [SerializeField] float minFOV = 20;
     [SerializeField] float maxFOV = 120;
@@ -16,6 +17,7 @@ public class CameraController : MonoBehaviour
     {
         cinemachineCamera = GetComponent<CinemachineCamera>();
     }
+
     public void changeCameraFOV(float speedAmount)
     {
         StopAllCoroutines();
@@ -46,4 +48,6 @@ public class CameraController : MonoBehaviour
 
         cinemachineCamera.Lens.FieldOfView = targetFOV;
     }
+
+    
 }

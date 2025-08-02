@@ -52,6 +52,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light_Hanging_Pole_Furn
       objectReference: {fileID: 0}
+    - target: {fileID: 1160670535947952466, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3280509383263556589, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

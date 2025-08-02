@@ -350,9 +350,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b704669b47a7db246b65dea207b4836d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpAnimator: {fileID: 2030965331}
   movementSpeed: 8
   xClamp: 3
   yClamp: 2
+  jumpDuration: 0.6
+  jumpDistance: 3
 --- !u!54 &202936297
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11096,6 +11099,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1046353737}
     m_Modifications:
+    - target: {fileID: 1014860696115371117, guid: dcbc89efbe5bd174b99e07c76bd0b6bf, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6034399179512208557, guid: dcbc89efbe5bd174b99e07c76bd0b6bf, type: 3}
       propertyPath: m_Name
       value: King
@@ -11186,8 +11193,8 @@ MonoBehaviour:
   chunkParent: {fileID: 1989878204}
   scoreManager: {fileID: 1596646869}
   startingChunksAmt: 12
-  chunkLength: 10
   checkpointChunkInterval: 8
+  chunkLength: 10
   moveSpeed: 6
   minMoveSpeed: 2
   maxMoveSpeed: 20
@@ -11305,6 +11312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1225088187}
   - component: {fileID: 1225088189}
+  - component: {fileID: 1225088190}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -11424,6 +11432,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1225088190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225088186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2172b710b12e74445a4fabd767ebb65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverText: {fileID: 1984535218}
 --- !u!1 &1257443893
 GameObject:
   m_ObjectHideFlags: 0
